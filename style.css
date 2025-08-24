@@ -72,7 +72,7 @@ section h2{
   color:var(--brand); 
   display:inline-block;
   padding-left:12px;
-  border-left:4px solid var(--brand); /* teal line instead of purple */
+  border-left:4px solid var(--brand);
 }
 section ul{ list-style:none; padding:0; margin:0; }
 section li{
@@ -82,7 +82,7 @@ section li{
   color:var(--text);
   transition: transform .25s ease, color .25s ease;
 }
-section li i{ opacity:.95; color:var(--link); } /* icons white */
+section li i{ opacity:.95; color:var(--link); }
 section li:hover{ transform: translateX(8px); color: var(--brand); }
 section p{ color:var(--muted); font-size:1.05rem; }
 
@@ -94,33 +94,36 @@ section p{ color:var(--muted); font-size:1.05rem; }
 #contact, #contact li{ color:var(--text); }
 #contact a{ 
   color: var(--link); 
-  text-decoration:none; 
-  border-bottom:1px dashed transparent; 
-  transition: color .25s ease, border-color .25s ease; 
+  text-decoration: none; 
+  border-bottom: 2px solid transparent;
+  transition: border-color .25s ease, color .25s ease;
 }
-#contact a:hover{ 
-  color:var(--brand); 
-  border-color: var(--brand); 
+#contact a:hover{
+  color: var(--brand);
+  border-color: var(--brand);
 }
 
 /* Footer */
 footer{
-  text-align:center; 
-  padding:20px 10px; 
-  margin:48px 0 0;
-  background: rgba(15,32,39,.95);
-  color:var(--brand);
+  text-align: center;
+  padding: 20px;
+  background: rgba(15,32,39,.9);
+  color: var(--muted);
+  font-size: 0.95rem;
+  box-shadow: 0 -3px 12px rgba(0,0,0,.4);
+  margin-top: 40px;
+  border-top: 1px solid var(--brand);
 }
 
 /* Animations */
-@keyframes fadeIn{ 
-  from{ opacity:0; transform: translateY(26px); } 
-  to { opacity:1; transform: translateY(0); } 
+@keyframes fadeIn {
+  0% { opacity:0; transform: translateY(12px); }
+  100% { opacity:1; transform: translateY(0); }
 }
 
 /* Responsive */
-@media (max-width: 720px){
-  nav{ padding:12px 16px; }
-  nav ul{ gap:14px; }
-  section{ margin:28px 12px; padding:26px 18px; }
+@media (max-width:768px){
+  nav{ flex-direction: column; align-items: flex-start; }
+  nav ul{ flex-direction: column; gap: 12px; }
+  section{ margin: 24px 16px; padding: 28px 18px; }
 }
