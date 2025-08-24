@@ -8,7 +8,7 @@ It is built with a clean, responsive design using HTML, CSS, and JavaScript.
 ## ✨ Features
 - 🎯 Career Objective section  
 - 🎓 Education details  
-- 💻 Technical Skills (Python, MySQL, HTML, CSS, Tableau)  
+- 💻 Technical Skills (Python, Java, MySQL, HTML, CSS, Tableau)  
 - 🧠 Personal Skills (Problem-solving, Adaptability, Teamwork)  
 - 📜 Certifications (ISRO, SkillDzire, etc.)  
 - 📬 Contact section with Email, Phone, LinkedIn & GitHub  
