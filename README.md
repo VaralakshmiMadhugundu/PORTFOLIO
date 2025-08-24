@@ -1,6 +1,6 @@
-# 🌐 Personal Portfolio
+# 🌐 Portfolio
 
-This is my **personal portfolio website** showcasing my career objectives, education, technical & personal skills, certifications, and contact details.  
+This is my **portfolio website** showcasing my career objectives, education, technical & personal skills, certifications, and contact details.  
 It is built with a clean, responsive design using HTML, CSS, and JavaScript.  
 
 ---
