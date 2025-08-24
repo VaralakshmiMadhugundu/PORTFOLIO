@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Varalakshmi Madugundu | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <h1>Varalakshmi Madugundu</h1>
+  <ul>
+    <li><a href="#" onclick="showSection('about')">About</a></li>
+    <li><a href="#" onclick="showSection('education')">Education</a></li>
+    <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+    <li><a href="#" onclick="showSection('certifications')">Certifications</a></li>
+    <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- About / Career Objective -->
+<section id="about" class="visible">
+  <h2>Career Objective</h2>
+  <p>
+    A passionate and results-driven Computer Science (Data Science) undergraduate, aspiring to become a software engineer and data professional with strong problem-solving abilities and analytical thinking. I aim to contribute to innovative projects by leveraging expertise in Python, databases, and web technologies, while continuously enhancing my technical knowledge and leadership skills to deliver impactful and scalable solutions in a dynamic organization.
+  </p>
+</section>
+
+<!-- Education -->
+<section id="education" class="hidden">
+  <h2>Education</h2>
+  <ul>
+    <li><strong>B.Tech in CSE (Data Science)</strong> – St. Johns College of Engineering & Technology, JNTUA (2022–2026)</li>
+    <li><strong>Intermediate (MPC)</strong> – Narayana Junior College (2020–2022)</li>
+    <li><strong>SSC</strong> – Machani Somappa English Medium High School (2019–2020)</li>
+  </ul>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="hidden">
+  <h2>Technical Skills</h2>
+  <ul>
+    <li><i class="fa-solid fa-code"></i> <strong>Programming:</strong> Python</li>
+    <li><i class="fa-solid fa-database"></i> <strong>Databases:</strong> MySQL</li>
+    <li><i class="fa-solid fa-globe"></i> <strong>Web Technologies:</strong> HTML, CSS</li>
+    <li><i class="fa-solid fa-chart-line"></i> <strong>Data Analysis & Visualization:</strong> Tableau</li>
+  </ul>
+
+  <h2>Personal Skills</h2>
+  <ul>
+    <li><i class="fa-solid fa-bolt"></i> Eagerness to learn</li>
+    <li><i class="fa-solid fa-cogs"></i> Adaptability with modern technologies</li>
+    <li><i class="fa-solid fa-users"></i> Team collaboration & communication</li>
+    <li><i class="fa-solid fa-check"></i> Problem-solving & critical thinking</li>
+  </ul>
+</section>
+
+<!-- Certifications -->
+<section id="certifications" class="hidden">
+  <h2>Certifications</h2>
+  <ul>
+    <li><i class="fa-solid fa-book"></i> Remote Sensing and Digital Image Analysis – IIRS, ISRO</li>
+    <li><i class="fa-solid fa-globe"></i> Overview of Geo-computation and Geo-web Services – IIRS, ISRO</li>
+    <li><i class="fa-solid fa-chart-bar"></i> Data Science – SkillDzire</li>
+  </ul>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="hidden">
+  <h2>Contact Me</h2>
+  <ul>
+    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:varalaxmiygr@gmail.com">varalaxmiygr@gmail.com</a></li>
+    <li><i class="fa-solid fa-phone"></i> +91 8897426794</li>
+    <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/varalakshmi-madugundu-bba108344/" target="_blank">LinkedIn</a></li>
+    <li><i class="fab fa-github"></i> <a href="https://github.com/VaralakshmiMadhugundu" target="_blank">GitHub</a></li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2025 Varalakshmi Madugundu | Portfolio Website</p>
+</footer>
+
+<script>
+function showSection(id){
+  document.querySelectorAll("section").forEach(sec => {
+    sec.classList.add("hidden");
+    sec.classList.remove("visible");
+  });
+  document.getElementById(id).classList.remove("hidden");
+  document.getElementById(id).classList.add("visible");
+}
+</script>
+
+</body>
+</html>
